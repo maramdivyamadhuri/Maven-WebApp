@@ -11,7 +11,7 @@
         path: /usr/local/apache-tomcat-7.0.76/webapps/maven-web-application.war
         state: absent
     - name: copy application package
-      copy:
+      copy: 
         src: target/maven-web-application.war
         dest: /usr/local/apache-tomcat-7.0.76/webapps/maven-web-application.war
         owner: tomcat
